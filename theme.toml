@@ -4,7 +4,7 @@
 name = "Hyperverses"
 license = "MIT"
 licenselink = "https://github.com/pfhawkins/hugo-hyperverses-theme/blob/master/LICENSE.md"
-description = ""
+description = "A hugo theme for hypertext exploration."
 homepage = "http://github.com/pfhawkins/hugo-hyperverses-theme"
 tags = ["", ""]
 features = ["", ""]
