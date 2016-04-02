@@ -1,12 +1,10 @@
 {{ partial "header.html" . }}
 <h1>{{.Title}}</h1>
 <article id="texton">
-  <div>
 
     {{ range where .Data.Pages "Title" "Hyperverses" }}
       {{ .Content }}
     {{ end }}
 
-  </div>
 </article>
 {{ partial "footer.html" . }}
