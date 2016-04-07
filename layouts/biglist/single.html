@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<!-- <h1>List of Lexia</h1> -->
+<h1>{{ .Title }}</h1>
+{{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
+<article>
+{{ range .Site.Pages }}
+  <dl>
+  <dt>
+    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+  </dt>
+  <dd>
+    {{ .Description }}
+  </dd>
+    <!-- if you want pages summary you can print it here {{ .Summary }} -->
+  </dl>
+{{ end }}
+</article>
+{{ partial "footer.html" . }}
