@@ -1,8 +1,8 @@
 <dl>
   <dt>TITLE</dt>
   <dl>{{ .Title }}</dl>
-  <dt>DESCRIPTION</dt>
-  <dl>{{ .Description }}</dl>
+  {{ with .Description }}<dt>DESCRIPTION</dt>
+  <dl>{{ . }}</dl>{{ end }}
   <dt>AUTHOR</dt>
   <dl>{{ .Site.Author.name }}</dl>
 </dl>
