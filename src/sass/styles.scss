@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'LatinModernRoman';
+  src: url('/fonts/lmroman10-italic.eot') format('embedded-opentype'),
+       url('/fonts/lmroman10-italic.woff') format('woff'),
+       url('/fonts/lmroman10-italic.ttf') format('truetype'),
+       url('/fonts/lmroman10-italic.svg') format('svg');
+}
+
+h1, h2, h3 {
+  font-family: 'LatinModernRoman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 1.1;
+}
+h1 { font-size: 64px; text-align: left;}
+h2 { font-size: 36px; line-height: 1; margin-top: 1em; margin-bottom: 1em; }
+h3 { font-size: 28px; }
+p, li, dl {
+  font-family: Georgia, serif;
+}
