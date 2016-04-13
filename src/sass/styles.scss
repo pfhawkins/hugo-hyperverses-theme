@@ -14,6 +14,38 @@ h1, h2, h3 {
 h1 { font-size: 64px; text-align: left;}
 h2 { font-size: 36px; line-height: 1; margin-top: 1em; margin-bottom: 1em; }
 h3 { font-size: 28px; }
-p, li, dl {
+li, dl {
   font-family: Georgia, serif;
+}
+p {
+ font-size: 18px;
+ font-family: Georgia, serif;
+ line-height: 1.5;
+ margin-bottom: 0;
+ margin-top: 0;
+ text-rendering: optimizeLegibility;
+ hyphens: auto;
+ -webkit-hyphens: auto;
+ -moz-hyphens: auto;
+ -ms-hyphens: auto;
+ -o-hyphens: auto;
+ color: #222222;
+}
+p + p {
+   text-indent: 1.5em;
+}
+a {
+  font-size: 18px;
+  font-family: 'TheanoOldStyle-Regular', Futura;
+  color: #212121;
+  text-decoration: none;
+}
+a:link {
+  background-color: #ffff66;
+}
+a:hover {
+  background-color: #57a5d4;
+}
+a:visited {
+  background-color: #ff66ff;
 }
