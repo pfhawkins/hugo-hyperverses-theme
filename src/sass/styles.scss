@@ -17,3 +17,28 @@ h3 { font-size: 28px; }
 p, li, dl {
   font-family: Georgia, serif;
 }
+
+.meta {
+  width: auto;
+  border: 2px solid #333333;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  table-layout: fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.meta td {
+  padding: 10px;
+  border: 2px solid #333333;
+}
+
+.meta tr td:first-child {
+  width: 20%;
+}
+
+.meta tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
