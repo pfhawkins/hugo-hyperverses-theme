@@ -1,8 +1,26 @@
-<dl>
-  <dt>TITLE</dt>
-  <dl>{{ .Title }}</dl>
-  {{ with .Description }}<dt>DESCRIPTION</dt>
-  <dl>{{ . }}</dl>{{ end }}
-  <dt>AUTHOR</dt>
-  <dl>{{ .Site.Author.name }}</dl>
-</dl>
+<table class="meta">
+  <tbody>
+    <tr>
+      <td>
+        TITLE
+      </td>
+      <td>
+        {{ .Title }}
+      </td>
+    </tr>
+    <tr>
+      {{ with .Description }}<td>DESCRIPTION</td>
+      <td>
+        {{ . }}
+      </td>{{ end }}
+    </tr>
+    <tr>
+      <td>
+        AUTHOR
+      </td>
+      <td>
+        {{ .Site.Author.name }}
+      </td>
+    </tr>
+  </tbody>
+</table>
