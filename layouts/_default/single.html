@@ -1,6 +1,14 @@
 {{ partial "header.html" . }}
-<h1>{{.Title}}</h1>
-<p><em><strong>{{ .Description }}</strong></em></p>
+<header>
+  <h1>{{.Title}}</h1>
+  <h3>{{ .Description }}</h3>
+</header>
+<div class="wrap">
+  <div class="left-annotate">&nbsp;</div>
+  <div class="content">
 {{ .Content }}
 {{ partial "meta.html" . }}
 {{ partial "footer.html" . }}
+  </div>
+  <div class="right-annotate">&nbsp;</div>
+</div>

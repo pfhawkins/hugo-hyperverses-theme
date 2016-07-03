@@ -1,3 +1,47 @@
+/* @import "compass"; */
+/* @import "susy"; */
+/* getting started from a susy tutorial https://css-tricks.com/build-web-layouts-easily-susy/ */
+/* Changing Susy default global settings */
+/* Makes border-box properties */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrap {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.left-annotate {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+.content {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+.right-annotate {
+  width: 25%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+/* clearfixin' */
+.left-annotate:after, .content:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Ye Olde Font Stuffs */
 @font-face {
   font-family: 'LatinModernRoman';
   src: url("/fonts/lmroman10-italic.eot") format("embedded-opentype"), url("/fonts/lmroman10-italic.woff") format("woff"), url("/fonts/lmroman10-italic.ttf") format("truetype"), url("/fonts/lmroman10-italic.svg") format("svg"); }
@@ -9,7 +53,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 64px;
-  text-align: left; }
+  text-align: center; }
 
 h2 {
   font-size: 36px;
@@ -22,6 +66,9 @@ h3 {
 
 li, dl {
   font-family: Georgia, serif; }
+
+header h3 {
+  text-align: center; }
 
 .meta {
   width: auto;

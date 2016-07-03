@@ -1,3 +1,54 @@
+/* @import "compass"; */
+@import "../../bower_components/susy/sass/susy";
+/* @import "susy"; */
+@charset "utf-8";
+
+/* getting started from a susy tutorial https://css-tricks.com/build-web-layouts-easily-susy/ */
+
+/* Changing Susy default global settings */
+$susy: (
+  /* Tells Susy to use 3 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1120px */
+  container: 1120px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box,
+  use-custom: (rem: true),
+  gutters: .25,
+  gutter-position: inside,
+  );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+.wrap {
+  @include container;
+}
+
+.left-annotate {
+  @include span(3 wide of 12);
+  @extend %clearfix;
+}
+
+.content {
+  @include span(6 wide of 12);
+  @extend %clearfix;
+}
+
+.right-annotate {
+  @include span(3 wide of 12 last);
+}
+
+/* clearfixin' */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/* Ye Olde Font Stuffs */
 @font-face {
   font-family: 'LatinModernRoman';
   src: url('/fonts/lmroman10-italic.eot') format('embedded-opentype'),
