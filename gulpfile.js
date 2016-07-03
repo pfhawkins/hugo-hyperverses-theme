@@ -1,19 +1,27 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    watch = require('gulp-watch'),
-    batch = require('gulp-batch');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
+// Gulp Sass Task
 gulp.task('sass', function() {
-  console.log('Building styles.css…');
-  gulp.src('./src/sass/styles.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./static/css/'));
-});
+  gulp.src('./src/sass/**/*.{scss,sass}')
+    // Initializes sourcemaps
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      errLogToConsole: true
+      }))
+    // Writes sourcemaps into the CSS file
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./static/css'))
+    .resume();
+})
 
-gulp.task('watch', function () {
-    watch('./src/sass/*', batch(function (events, done) {
-        gulp.start('sass', done);
-    }));
-});
+// Watch scss folder for changes
+gulp.task('watch', function() {
+  // Watches the scss folder for all .scss and .sass files
+  // If any file changes, run the sass task
+  gulp.watch('./src/sass/**/*.{scss,sass}', ['sass'])
+})
 
-gulp.task('default', ['watch']);
+// Creating a default task
+gulp.task('default', ['sass', 'watch']);

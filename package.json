@@ -1,0 +1,29 @@
+{
+  "name": "hugo-hyperverses-theme",
+  "version": "0.0.1",
+  "description": "hyperverses theme for hugo static site generator",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "sassdoc": "^2.1.20"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfhawkins/hugo-hyperverses-theme.git"
+  },
+  "author": "P.F. Hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfhawkins/hugo-hyperverses-theme/issues"
+  },
+  "homepage": "https://github.com/pfhawkins/hugo-hyperverses-theme#readme"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "hugo-hyperverses-theme",
+  "homepage": "https://github.com/pfhawkins/hugo-hyperverses-theme",
+  "authors": [
+    "P.F. Hawkins <pf@pfhawkins.com>"
+  ],
+  "description": "hyperverses theme for hugo",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}
