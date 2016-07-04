@@ -62,15 +62,37 @@ h1, h2, h3 {
   color: #333333;
   line-height: 1.1;
 }
-h1 { font-size: 64px; text-align: center;}
+h1 { font-size: 64px; text-align: left;}
 h2 { font-size: 36px; line-height: 1; margin-top: 1em; margin-bottom: 1em; }
 h3 { font-size: 28px; }
 li, dl {
   font-family: Georgia, serif;
 }
 
+body {
+  margin: 0px 0px 0px 0px;
+}
+
 header {
-  h3 {text-align: center;}
+  /* height: 100%; */
+  background:
+	radial-gradient(
+		magenta,
+		magenta 40%,
+		transparent 40%,
+		transparent 100%
+	), floralwhite;
+
+  background-size:
+	  0.2em 0.2em;
+
+  padding: 0px 0px 0px 0px;
+  border-bottom: 0.4em solid black;
+  margin-bottom: 1em;
+
+  h1 {
+    margin-bottom: 0.2em;
+  }
 }
 
 .meta {
@@ -78,6 +100,7 @@ header {
   border: 2px solid #333333;
   border-collapse: collapse;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
   font-weight: bold;
   table-layout: fixed;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
