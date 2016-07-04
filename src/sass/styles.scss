@@ -22,6 +22,7 @@ $susy: (
 @include border-box-sizing;
 .wrap {
   @include container;
+  flex: 1;
 }
 
 .left-annotate {
@@ -74,6 +75,9 @@ li, dl {
 body {
   margin: 0px 0px 0px 0px;
   background-color: floralwhite;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 header {
