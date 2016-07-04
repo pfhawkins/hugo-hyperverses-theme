@@ -25,12 +25,12 @@ $susy: (
 }
 
 .left-annotate {
-  @include span(3 wide of 12);
+  @include span(2 wide of 12);
   @extend %clearfix;
 }
 
 .content {
-  @include span(6 wide of 12);
+  @include span(7 wide of 12);
   @extend %clearfix;
 }
 
