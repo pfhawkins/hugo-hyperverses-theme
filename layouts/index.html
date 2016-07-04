@@ -1,5 +1,8 @@
 {{ partial "header.html" . }}
 <header><h1>{{.Title}}</h1></header>
+<div class="wrap">
+  <div class="left-annotate">&nbsp;</div>
+  <div class="content">
 <article id="texton">
 
     {{ range where .Data.Pages "Title" "Hyperverses" }}
@@ -8,3 +11,6 @@
 
 </article>
 {{ partial "footer.html" . }}
+  </div>
+  <div class="right-annotate">&nbsp;</div>
+</div>

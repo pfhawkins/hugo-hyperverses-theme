@@ -1,7 +1,10 @@
 {{ partial "header.html" . }}
 
 <!-- <h1>List of Lexia</h1> -->
-<h1>{{ .Title }}</h1>
+<header><h1>{{ .Title }}</h1></header>
+<div class="wrap">
+  <div class="left-annotate">&nbsp;</div>
+  <div class="content">
 {{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
 <article>
 {{ range .Site.Pages }}
@@ -16,4 +19,7 @@
   </dl>
 {{ end }}
 </article>
+  </div>
+  <div class="right-annotate">&nbsp;</div>
+</div>
 {{ partial "footer.html" . }}
