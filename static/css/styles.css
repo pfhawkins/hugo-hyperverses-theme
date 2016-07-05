@@ -72,7 +72,7 @@ li, dl {
 
 body {
   margin: 0px 0px 0px 0px;
-  background-color: floralwhite;
+  background-color: #fffff8;
   display: flex;
   min-height: 100vh;
   flex-direction: column; }
