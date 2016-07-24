@@ -79,7 +79,7 @@ body {
 
 header {
   /* height: 100%; */
-  background: radial-gradient(#57a5d4, #57a5d4 40%, transparent 40%, transparent 100%), floralwhite;
+  background: radial-gradient(magenta, magenta 40%, transparent 40%, transparent 100%), floralwhite;
   background-size: 0.2em 0.2em;
   padding: 0px 0px 0px 0px;
   border-bottom: 0.4em solid black;
